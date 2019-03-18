@@ -1,7 +1,8 @@
 let express = require('express')
-let https = require('https')
+let cors = require('cors')
 let app = express()
 
+app.use(cors())
 app.use(express.json())
 
 //add routers
