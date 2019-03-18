@@ -26,7 +26,7 @@ export default class CreateContactsScreen extends Component {
       body: JSON.stringify(data)
     })
     .then(result => {
-      console.log(result)
+      Router.back()
     })
   }
 
