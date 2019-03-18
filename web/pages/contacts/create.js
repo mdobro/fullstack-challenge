@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Router from 'next/router'
 import fetch from 'node-fetch'
 
 export default class CreateContactsScreen extends Component {
@@ -32,6 +33,7 @@ export default class CreateContactsScreen extends Component {
   render() {
     return (
       <div>
+        <button onClick={() => Router.back()}>Go Back</button>
         <h1>Create new Contact</h1>
         <form onSubmit={this.handleSubmit}>
           <label>
