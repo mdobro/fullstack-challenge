@@ -124,3 +124,6 @@ typings/
 # dotenv environment variables file
 .env
 
+#Custom
+/**/.next
+
