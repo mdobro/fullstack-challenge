@@ -1,3 +1,10 @@
+# How to run
+1. Ensure mongoDB is installed and running.
+1. run `npm install` in both `api` and `web` directories.
+1. run `npm start` in the `api` directory to start the API.
+1. run `npm run  dev` in the `web` directory to start the web server.
+1. To test, run `npm test` in either directory.
+
 # Griffin Group Global full stack Development Challenge
 
 Hi! Thank you for your interest in [Griffin Group Global][g3website]. Our evaluation processes begins with an open-ended coding challenge that we will discuss during your interview. There is not one correct way to approach this challenge. Rather, we would like to see your approach and your creativity in solving the problem.
