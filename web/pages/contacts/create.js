@@ -4,12 +4,6 @@ import fetch from 'node-fetch'
 
 export default class CreateContactsScreen extends Component {
 
-  constructor(props) {
-    super(props)
-
-
-  }
-
   handleSubmit(event) {
     event.preventDefault()
     const formData = new FormData(event.target)

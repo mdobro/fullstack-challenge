@@ -4,7 +4,8 @@ let paperwork = require('paperwork')
 
 let db = require('../model/db')
 
-
+// An idea I had here is to create an index over the contacts collection 
+// and allow a search over all text saved in the collection
 router.get('/:id?', (req, res) => {
   //unpack req
   let id = req.params.id
