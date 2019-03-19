@@ -2,6 +2,7 @@ module.exports = {
   getContacts: async function () {
     return [
       {
+        _id: 'asdfasdfasdf',
         first_name: "Test",
         last_name: "Tester",
         phone_number: "111-222-3333",

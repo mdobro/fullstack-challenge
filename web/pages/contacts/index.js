@@ -16,7 +16,7 @@ export default class ContactsScreen extends Component {
     super(props)
 
     this.state = {
-      contacts: props.contacts
+      contacts: props.contacts || []
     }
   }
 
