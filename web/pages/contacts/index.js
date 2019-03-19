@@ -1,15 +1,14 @@
 import React, { Component } from 'react'
-import fetch from 'node-fetch'
+import api from '../../api/api'
 import ContactCard from '../../components/contactCard'
 import Link from 'next/link'
 
 export default class ContactsScreen extends Component {
 
   static async getInitialProps() {
-    let res = await fetch('http://localhost:3000/contacts')
-    let json = await res.json()
+    let contacts = await api.getContacts()
     return {
-      contacts: json
+      contacts
     }
   }
 
