@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Router from 'next/router'
-import fetch from 'node-fetch'
+import api from '../../api/api'
 
 export default class CreateContactsScreen extends Component {
 
@@ -12,14 +12,9 @@ export default class CreateContactsScreen extends Component {
       data[key] = val
     })
     console.log(data)
-    fetch('http://localhost:3000/contacts', {
-      method: 'POST',
-      headers: new Headers({
-        'Content-Type': 'application/json'
-      }),
-      body: JSON.stringify(data)
-    })
-    .then(result => {
+    api.postContact(data)
+    .then(res => {
+      //todo: check result for successful save
       Router.back()
     })
   }
